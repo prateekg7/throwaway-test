@@ -1,0 +1,19 @@
+name: driftguard
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  driftguard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run driftguard
+        uses: prateekg7/driftguard@main
+        with:
+          groq-api-key: ${{ secrets.GROQ_API_KEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
