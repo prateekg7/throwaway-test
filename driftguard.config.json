@@ -14,8 +14,10 @@
     "^chore\\(driftguard\\):",
     "^Merge pull request"
   ],
-  "model": "claude-3-haiku-20240307",
-  "maxTokensPerProposal": 700,
+  "provider": "groq",
+  "model": "llama-3.1-8b-instant",
+  "groqBaseUrl": "https://api.groq.com/openai/v1",
+  "maxTokensPerProposal": 500,
   "prMode": {
     "enabled": false,
     "autoCreatePR": false,
