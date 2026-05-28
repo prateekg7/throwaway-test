@@ -1,7 +1,6 @@
-# Agent Context
+## Stack
+- Auth is handled in `src/auth.ts` using JWT.
+- Tests live in `__tests__/` and use Jest.
 
-## Driftguard Phase 2 E2E 20260527191524
-- Driftguard E2E auth fixture lives in `src/driftguard-e2e-20260527191524/auth.ts`.
-
-## Driftguard Phase 2 E2E 20260528201132
-- Driftguard E2E auth fixture lives in `src/driftguard-e2e-20260528201132/auth.ts`.
+## Conventions
+- Never import directly from `src/utils/legacy/` — use the adapter in `src/adapters/`.
