@@ -1,4 +1,4 @@
-// auth module - completely refactored to use Supabase
+// auth module - completely refactored to use Supabase - check
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient(
