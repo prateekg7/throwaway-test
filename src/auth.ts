@@ -1,4 +1,4 @@
-// auth module - updated - again - and again - again - again - last
+// auth module - updated - again - and again - again - again - last - ok
 export function verifyToken(token: string): boolean {
   return token.length > 0;
 }
