@@ -1,4 +1,4 @@
-// auth module - completely refactored to use Supabase - check ughh im done bruh
+// auth module - completely refactored to use Supabase - check ughh im done bruh hi
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient(
